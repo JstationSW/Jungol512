@@ -1,12 +1,19 @@
+import java.util.Scanner;
+
 public class Main {
 
 	public static void main(String[] args) {
-		int a = 49;
-		double b = 0.268300;
-		double c = a*b;
-		
-		System.out.printf("%d * %.6f = %.6f", a,b,c);
-		
+		Scanner sc = new Scanner(System.in);
+		double d1 = sc.nextDouble();
+		double d2 = sc.nextDouble();
+//		String c = sc.next();
+		char c = sc.next().charAt(0);
+//		String str = sc.next();
+		sc.close();
+
+		System.out.printf("%.2f\n", d1);
+		System.out.printf("%.2f\n", d2);
+		System.out.println(c);
 
 	}
 }
